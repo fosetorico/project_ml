@@ -1,0 +1,5 @@
+pandas
+numpy
+seaborn
+
+-e . # indication that mapping is being made to setup.py
