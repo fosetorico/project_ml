@@ -1,5 +1,8 @@
 pandas
 numpy
 seaborn
-
--e . # indication that mapping is being made to setup.py
+matplotlib
+scikit-learn
+catboost
+xgboost
+#-e . # indication that mapping is being made to setup.py
