@@ -15,12 +15,13 @@ from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
 
 # Add the project root directory to sys.path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from src.exception import CustomException
 from src.logger import logging
 from src.utils import save_object, evaluate_models
 
-# @dataclass decorator , because inside any traditional class, to define the class variables you basically use _init_ ,  
+# @dataclass decorator , because inside any traditional class, to define the class variables you basically use _init_,  
 # but if we use this @dataclass decorator,  it enables us to define the class variable directly
 @dataclass
 class ModelTrainerConfig:
